@@ -18,6 +18,7 @@ linux配置文件
 │   └── .zshrc                 # zsh配置
 ├── etc
 │   └── hosts                  # hosts，加速github
+├── KeePassRPC.plgx            # keepass插件
 └── README.md
 ```
 
