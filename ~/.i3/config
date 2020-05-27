@@ -2,9 +2,9 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 exec_always --no-startup-id fcitx-autostart
 exec_always --no-startup-id nutstore
-exec_always --no-startup-id keepass
+exec_always --no-startup-id keepassxc
 exec_always --no-startup-id qv2ray 
-exec_always --no-startup-id compton
+# exec_always --no-startup-id compton
 exec_always --no-startup-id variety
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
@@ -280,7 +280,7 @@ bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+# exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
