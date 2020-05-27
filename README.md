@@ -5,7 +5,7 @@ linux配置文件
 │   ├── .config
 │   │   ├── alacritty
 │   │   │   └── alacritty.yml  # alacritty配置
-│   │   ├── conpton.conf       # conpton配置
+│   │   ├── compton.conf       # compton配置
 │   │   └── nvim               # nvim配
 │   │       ├── coc.vim
 │   │       ├── command.vim
