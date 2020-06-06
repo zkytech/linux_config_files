@@ -9,6 +9,12 @@ map <C-n> :NERDTreeToggle<CR>
 
 " 使用tab键来选择首个候选项
 " NOTE: 使用命令':verbose imap <tab>' 查看tab键是否被其它插件使用
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
@@ -94,3 +100,49 @@ omap ac <Plug>(coc-classobj-a)
 " Use CTRL-S for selections ranges.
 nmap <silent> <C-s> <Plug>(coc-range-select)
 xmap <silent> <C-s> <Plug>(coc-range-select)
+
+" CTRL-c 编译运行
+nnoremap <silent> <C-c> :call CompileRunGcc() <CR>
+
+func! CompileRunGcc()
+	exec "w"
+	if &filetype == 'c'
+		exec "!g++ % -o %<"
+		exec "!time ./%<"
+	elseif &filetype == 'cpp'
+		set splitbelow
+		exec "!g++ -std=c++11 % -Wall -o %<"
+		:sp
+		:res -15
+		:term ./%<
+	elseif &filetype == 'java'
+		exec "!javac %"
+		exec "!time java %<"
+	elseif &filetype == 'sh'
+		:!time bash %
+	elseif &filetype == 'python'
+		set splitbelow
+		:sp
+		:term python3 %
+	elseif &filetype == 'html'
+"		silent! exec "!".g:mkdp_browser." % &"
+    " 使用默认浏览器打开当前html文件
+    silent! exec "!$BROWSER % &"
+	elseif &filetype == 'markdown'
+		exec "MarkdownPreview"
+	elseif &filetype == 'tex'
+		silent! exec "VimtexStop"
+		silent! exec "VimtexCompile"
+	elseif &filetype == 'dart'
+		CocCommand flutter.run -d iPhone\ 11\ Pro
+		CocCommand flutter.dev.openDevLog
+	elseif &filetype == 'javascript'
+		set splitbelow
+		:sp
+		:term export DEBUG="INFO,ERROR,WARNING"; node --trace-warnings .
+	elseif &filetype == 'go'
+		set splitbelow
+		:sp
+		:term go run .
+	endif
+endfunc
