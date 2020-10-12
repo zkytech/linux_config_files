@@ -69,7 +69,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions autojump zsh-syntax-highlighting)
-
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -103,4 +103,4 @@ alias open="dolphin ."
 alias vim="nvim"
 alias ra="ranger"
 # 针对梯子的环境变量设置
-export ALL_PROXY="socks5://127.0.0.1:1088"
+# export ALL_PROXY="socks5://127.0.0.1:1088"
