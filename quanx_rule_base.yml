@@ -1,0 +1,62 @@
+[general]
+excluded_routes=192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/IP_API.js
+network_check_url=http://www.baidu.com/
+server_check_url=http://www.gstatic.com/generate_204
+
+[dns]
+server=119.29.29.29
+server=223.5.5.5
+server=1.0.0.1
+server=8.8.8.8
+
+[policy]
+
+[server_remote]
+
+[filter_remote]
+
+[rewrite_remote]
+# > 远程重写
+
+https://raw.githubusercontent.com/28413761/QX/main/chongxie.txt, tag=🚫广告终结者@张军, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Adblock4limbo.conf, tag=毒奶去广告, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/dishao123/Cuttlefish/master/Rewrite/AdBlock/Bilibili.conf, tag=B站去广告+1080P高码率@ddgksf2013, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zhihu/zhihu_plus.qxrewrite, tag=知乎去广告及体验增强@blackmatrix7, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/dishao123/Cuttlefish/master/Applet/QuanX.conf, tag=微信小程序去广告@ddgksf2013, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/dishao123/Cuttlefish/master/Html/WebAdBlock.conf, tag=影视网站去广告@ddgksf2013, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/VirgilClyne/iRingo/main/qxrewrite/Apple_Maps.qxrewrite, tag=修改地图🗺@VirgilClyne, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/VirgilClyne/iRingo/main/qxrewrite/Location.qxrewrite, tag=定位服务@VirgilClyne, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/VirgilClyne/iRingo/main/qxrewrite/Weather.qxrewrite, tag=解锁天气🌤@VirgilClyne, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/VirgilClyne/iRingo/main/qxrewrite/Siri.qxrewrite, tag=Siri与搜索@VirgilClyne, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/id77/QuantumultX/master/rewrite/Youtube_CC.conf#out=Hant, tag=油管字幕翻译@id77, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/dishao123/Cuttlefish/master/Rewrite/Function/BilibiliAutoRegion.conf, tag=Bilibili换区脚本@NobyDa, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag=比价脚本@Orz-3, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/TikTok.conf, tag=Tiktok解锁@Orz-3, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Netflix_ratings.conf, tag=Netflix评分@Orz-3, update-interval=172800, opt-parser=false, enabled=true
+
+#>>>>>>>>>>>网页优化
+https://raw.githubusercontent.com/dishao123/Cuttlefish/master/Rewrite/Function/Q-Search.conf, tag=Safari超级搜索@ddgksf2013, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=Boxjs正式版, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.tf.conf, tag=Boxjs测试版, update-interval=172800, opt-parser=false, enabled=false
+;https://github.com/dishao123/Cuttlefish/raw/master/Rewrite/Function/EndlessGoogle.conf, tag=Google自动翻页@langkhach
+[server_local]
+
+[filter_local]
+
+[rewrite_local]
+# > 本地重写
+
+# > TF国区下载修正@id77
+^https?:\/\/testflight\.apple\.com\/v2\/accounts\/.*\/apps\/\d*/builds/\d*/install url request-body storefrontId" : ".*" request-body storefrontId" : "143441-1,29"
+# > 替换支付宝内淘票票评分为豆瓣评分@Peng-YM
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopshowapi\.getextendshowbyid url script-response-body https://raw.githubusercontent.com/Peng-YM/QuanX/master/Rewrites/TaoPiaoPiao/taopiaopiao.js
+# > 豆瓣添加便捷播放按钮&展示在映流媒体平台@Neurogram-R
+^https?:\/\/m\.douban\.com\/movie\/subject\/.+ url script-response-body https://github.com/Neurogram-R/Quantumult-X/raw/main/Douban.js
+# > 酷安去好物推荐
+^https:\/\/api\.coolapk\.com\/v6\/feed\/detail.* url script-response-body https://raw.githubusercontent.com/dishao123/Eric/master/surge/Script/KA.js
+# > 微信 去除公众号文章底部广告
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/dishao123/Script/master/QuantumultX/File/Wechat.js
+# > sub-store
+^https?:\/\/sub\.store url script-analyze-echo-response https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js
+[mitm]
