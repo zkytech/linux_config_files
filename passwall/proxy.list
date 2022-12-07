@@ -27,6 +27,7 @@ DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,cloudera.com
 DOMAIN-SUFFIX,dbeaver.com
 DOMAIN-SUFFIX,nodejs.org
+DOMAIN-SUFFIX,nebula-graph.io
 DOMAIN-KEYWORD,apache
 DOMAIN-KEYWORD,jsdelivr
 DOMAIN-KEYWORD,stackoverflow.com
