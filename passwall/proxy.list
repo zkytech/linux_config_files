@@ -28,6 +28,7 @@ DOMAIN-SUFFIX,cloudera.com
 DOMAIN-SUFFIX,dbeaver.com
 DOMAIN-SUFFIX,nodejs.org
 DOMAIN-SUFFIX,nebula-graph.io
+DOMAIN-SUFFIX,sstatic.net
 DOMAIN-KEYWORD,apache
 DOMAIN-KEYWORD,jsdelivr
 DOMAIN-KEYWORD,stackoverflow.com
