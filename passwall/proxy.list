@@ -17,6 +17,8 @@ DOMAIN,*.warp.dev
 DOMAIN,*.segment.io
 DOMAIN,*.sentry.io
 DOMAIN-KEYWORD,openai
+DOMAIN-SUFFIX,maven.org
+DOMAIN-SUFFIX,mvnrepository.com
 DOMAIN-SUFFIX,googleadservices.com
 DOMAIN-SUFFIX,yandex.com
 DOMAIN-SUFFIX,docker.com
