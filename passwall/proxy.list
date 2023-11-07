@@ -11,6 +11,7 @@ DOMAIN,*.readthedocs.org
 DOMAIN-SUFFIX,readthedocs.org
 DOMAIN-SUFFIX,podcasts.apple.com
 DOMAIN-SUFFIX,moon.fm
+DOMAIN-KEYWORD,windy
 DOMAIN,*.openvpn.net
 DOMAIN,*.googleapis.com
 DOMAIN,*.warp.dev
