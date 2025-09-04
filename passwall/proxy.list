@@ -11,6 +11,8 @@ DOMAIN-SUFFIX,geeksforgeeks.org
 DOMAIN-SUFFIX,jira.readthedocs.io
 DOMAIN-SUFFIX,aaaa.gay
 DOMAIN,*.readthedocs.org
+DOMAIN-SUFFIX,bigmodel.cn
+DOMAIN-SUFFIX,z.ai
 DOMAIN-SUFFIX,readthedocs.org
 DOMAIN-SUFFIX,podcasts.apple.com
 DOMAIN-SUFFIX,moon.fm
