@@ -257,6 +257,7 @@ cfw-bypass:
   - "*.local"
   - "*.intranet"
   - "*.vpn"
+  - "*duckcoding*"
   - "*komect*"
   - "*cmhi*"
   - "10.*"
