@@ -72,7 +72,7 @@ experimental:
 #     - 8.8.8.8
 #     - 8.8.4.4
 dns:
-  enable: true # 启用DNS解析
+  enable: false # 启用DNS解析
   ipv6: true # 支持IPv6
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip # 使用fake-ip模式提升性能
