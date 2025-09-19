@@ -72,11 +72,11 @@ experimental:
 #     - 8.8.8.8
 #     - 8.8.4.4
 dns:
-  enable: false # 启用DNS解析
+  enable: true # 启用DNS解析 - TUN模式必需
   ipv6: true # 支持IPv6
   listen: 0.0.0.0:53
-  enhanced-mode: fake-ip # 使用fake-ip模式提升性能
-  fake-ip-range: 198.18.0.1/16
+  enhanced-mode: redir-host # 使用redir-host模式，兼容性更好
+  # fake-ip-range: 198.18.0.1/16 # 注释掉fake-ip相关配置
   fake-ip-filter:
     - '*.lan'
     - '*.local'
@@ -85,6 +85,19 @@ dns:
     - '+.stun.playstation.net'
     - 'xbox.*.microsoft.com'
     - '+.battlenet.com.cn'
+    # 添加常见的SSL/TLS连接域名过滤
+    - '+.github.com'
+    - '+.githubusercontent.com'
+    - '+.githubassets.com'
+    - '+.amazon.com'
+    - '+.amazonaws.com'
+    - '+.cloudflare.com'
+    - '+.cloudfront.net'
+    - '+.google.com'
+    - '+.googleapis.com'
+    - '+.microsoft.com'
+    - '+.apple.com'
+    - '+.icloud.com'
   nameserver:
     - 114.114.114.114
     - https://doh.pub/dns-query # 腾讯 DoH
@@ -101,6 +114,11 @@ dns:
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+      - '+.github.com'
 
 # 1. clash DNS 请求逻辑：
 #   (1) 当访问一个域名时， nameserver 与 fallback 列表内的所有服务器并发请求，得到域名对应的 IP 地址。
