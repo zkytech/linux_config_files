@@ -1,7 +1,7 @@
 DOMAIN-SUFFIX,elevenlabs.io
-DOMAIN-SUFFIX,mcp.context7.com
+DOMAIN-SUFFIX,context7.com
 DOMAIN-SUFFIX,ghcr.io
-DOMAIN-SUFFIX,api.telegram.org
+DOMAIN-SUFFIX,telegram.org
 DOMAIN-SUFFIX,jetbrains.com
 DOMAIN-SUFFIX,rust-lang.org
 DOMAIN-SUFFIX,nintendo.com
@@ -12,7 +12,7 @@ DOMAIN-SUFFIX,imdb.com
 DOMAIN-SUFFIX,scrapy.org
 DOMAIN-SUFFIX,dev.to
 DOMAIN-SUFFIX,geeksforgeeks.org
-DOMAIN-SUFFIX,jira.readthedocs.io
+DOMAIN-SUFFIX,readthedocs.io
 DOMAIN-SUFFIX,aaaa.gay
 DOMAIN,*.readthedocs.org
 DOMAIN-SUFFIX,bigmodel.cn
