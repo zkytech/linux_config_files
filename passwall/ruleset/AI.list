@@ -2,11 +2,12 @@
 
 DOMAIN-SUFFIX,cerebras.ai
 
-# 内容：OpenAi,claude,recraft,poe,bing,gemini,perplexity
+# 内容：OpenAI, Claude, Recraft, Poe, Bing/Copilot, Gemini, Perplexity
 
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,chatgpt
-DOMAIN-KEYWORD,datadoghq
+# Datadog 为共享基础设施，关键字误伤面较大；优先保留更精确的域名。
+# DOMAIN-KEYWORD,datadoghq
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,client-api.arkoselabs.com
 DOMAIN-SUFFIX,events.statsigapi.net
@@ -46,7 +47,7 @@ DOMAIN-SUFFIX,poe.com
 
 #aitools
 PROCESS-NAME,LM Studio
-DOMAIN-SUFFIX,lmsudio.ai
+DOMAIN-SUFFIX,lmstudio.ai
 
 #grok
 PROCESS-NAME,grok

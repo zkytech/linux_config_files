@@ -1,8 +1,9 @@
 
 # 内容：Google
-# 数量：24条
+# 数量：31条
 DOMAIN-KEYWORD,gmail
-DOMAIN-KEYWORD,google
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,1e100.net
 DOMAIN-SUFFIX,2mdn.net
 DOMAIN-SUFFIX,app-measurement.net
@@ -26,7 +27,7 @@ DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 IP-CIDR,74.125.0.0/16,no-resolve
 IP-CIDR,173.194.0.0/16,no-resolve
-DOMAIN-KEYWORD,goog
+
 DOMAIN-SUFFIX,fp-us-tmobile.rcs.telephony.goog
 
 # Antigravity
@@ -65,12 +66,11 @@ DOMAIN-SUFFIX,z.ai
 DOMAIN-SUFFIX,readthedocs.org
 DOMAIN-SUFFIX,podcasts.apple.com
 DOMAIN-SUFFIX,moon.fm
-DOMAIN-KEYWORD,windy
-DOMAIN,*.openvpn.net
-DOMAIN,*.googleapis.com
-DOMAIN,*.warp.dev
-DOMAIN,*.segment.io
-DOMAIN,*.sentry.io
+DOMAIN-SUFFIX,windy.com
+DOMAIN-SUFFIX,openvpn.net
+DOMAIN-SUFFIX,warp.dev
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
 DOMAIN-KEYWORD,openai
 DOMAIN-SUFFIX,maven.org
 DOMAIN-SUFFIX,mvnrepository.com
@@ -88,13 +88,18 @@ DOMAIN-SUFFIX,nodejs.org
 DOMAIN-SUFFIX,nebula-graph.io
 DOMAIN-SUFFIX,sstatic.net
 DOMAIN-SUFFIX,python.org
-DOMAIN-KEYWORD,apache
-DOMAIN-KEYWORD,jsdelivr
-DOMAIN-KEYWORD,stackoverflow.com
-DOMAIN-KEYWORD,github
-DOMAIN-KEYWORD,workflowy
-DOMAIN-KEYWORD,f-droid
-DOMAIN-KEYWORD,mongodb
+DOMAIN-SUFFIX,apache.org
+DOMAIN-SUFFIX,cdn.jsdelivr.net
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN-SUFFIX,stackoverflow.com
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,github.dev
+DOMAIN-SUFFIX,workflowy.com
+DOMAIN-SUFFIX,f-droid.org
+DOMAIN-SUFFIX,mongodb.com
 DOMAIN-SUFFIX,brew.sh
 DOMAIN-SUFFIX,sdkman.io
 DOMAIN-SUFFIX,xeton.dev
