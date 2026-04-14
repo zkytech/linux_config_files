@@ -110,6 +110,15 @@ dns:
     - https://8.8.8.8/dns-query # Google DoH 备用
     - tls://1.1.1.1:853 # Cloudflare DoT
     - tls://8.8.8.8:853 # Google DoT
+  nameserver-policy:
+    '+.github.com': https://cloudflare-dns.com/dns-query
+    '+.githubusercontent.com': https://cloudflare-dns.com/dns-query
+    '+.githubassets.com': https://cloudflare-dns.com/dns-query
+    '+.github.io': https://cloudflare-dns.com/dns-query
+    '+.githubapp.com': https://cloudflare-dns.com/dns-query
+    '+.githubcopilot.com': https://cloudflare-dns.com/dns-query
+    '+.fastly.net': https://cloudflare-dns.com/dns-query
+    '+.jsdelivr.net': https://cloudflare-dns.com/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -121,6 +130,13 @@ dns:
       - '+.facebook.com'
       - '+.youtube.com'
       - '+.github.com'
+      - '+.githubusercontent.com'
+      - '+.githubassets.com'
+      - '+.github.io'
+      - '+.githubapp.com'
+      - '+.githubcopilot.com'
+      - '+.fastly.net'
+      - '+.jsdelivr.net'
 
 # 1. clash DNS 请求逻辑：
 #   (1) 当访问一个域名时， nameserver 与 fallback 列表内的所有服务器并发请求，得到域名对应的 IP 地址。

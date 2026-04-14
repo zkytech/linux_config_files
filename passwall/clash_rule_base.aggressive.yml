@@ -99,6 +99,14 @@ dns:
     'docs.qq.com': https://doh.pub/dns-query
     '+.qq.com': https://doh.pub/dns-query
     '+.tencent.com': https://doh.pub/dns-query
+    '+.github.com': https://cloudflare-dns.com/dns-query
+    '+.githubusercontent.com': https://cloudflare-dns.com/dns-query
+    '+.githubassets.com': https://cloudflare-dns.com/dns-query
+    '+.github.io': https://cloudflare-dns.com/dns-query
+    '+.githubapp.com': https://cloudflare-dns.com/dns-query
+    '+.githubcopilot.com': https://cloudflare-dns.com/dns-query
+    '+.fastly.net': https://cloudflare-dns.com/dns-query
+    '+.jsdelivr.net': https://cloudflare-dns.com/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -110,6 +118,13 @@ dns:
       - '+.facebook.com'
       - '+.youtube.com'
       - '+.github.com'
+      - '+.githubusercontent.com'
+      - '+.githubassets.com'
+      - '+.github.io'
+      - '+.githubapp.com'
+      - '+.githubcopilot.com'
+      - '+.fastly.net'
+      - '+.jsdelivr.net'
 cfw-latency-timeout: 3000
 cfw-latency-url: http://www.gstatic.com/generate_204
 
