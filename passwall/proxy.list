@@ -39,6 +39,9 @@ PROCESS-NAME,Antigravity Helper (Renderer)
 PROCESS-NAME,Antigravity Helper (GPU)
 PROCESS-NAME,Antigravity Helper (Plugin)
 DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN,www.googleapis.com
+DOMAIN,play.googleapis.com
 
 
 # Google drive
