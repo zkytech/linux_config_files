@@ -98,6 +98,18 @@ dns:
     'docs.qq.com': https://doh.pub/dns-query
     '+.qq.com': https://doh.pub/dns-query
     '+.tencent.com': https://doh.pub/dns-query
+    '+.chatgpt.com': https://cloudflare-dns.com/dns-query
+    '+.openai.com': https://cloudflare-dns.com/dns-query
+    '+.oaistatic.com': https://cloudflare-dns.com/dns-query
+    '+.oaiusercontent.com': https://cloudflare-dns.com/dns-query
+    '+.openaimerge.com': https://cloudflare-dns.com/dns-query
+    '+.statsig.com': https://cloudflare-dns.com/dns-query
+    '+.statsigapi.net': https://cloudflare-dns.com/dns-query
+    '+.featuregates.org': https://cloudflare-dns.com/dns-query
+    '+.featureassets.org': https://cloudflare-dns.com/dns-query
+    '+.workos.com': https://cloudflare-dns.com/dns-query
+    '+.workoscdn.com': https://cloudflare-dns.com/dns-query
+    '+.prodregistryv2.org': https://cloudflare-dns.com/dns-query
     '+.github.com': https://cloudflare-dns.com/dns-query
     '+.githubusercontent.com': https://cloudflare-dns.com/dns-query
     '+.githubassets.com': https://cloudflare-dns.com/dns-query
@@ -113,6 +125,18 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
     domain:
+      - '+.chatgpt.com'
+      - '+.openai.com'
+      - '+.oaistatic.com'
+      - '+.oaiusercontent.com'
+      - '+.openaimerge.com'
+      - '+.statsig.com'
+      - '+.statsigapi.net'
+      - '+.featuregates.org'
+      - '+.featureassets.org'
+      - '+.workos.com'
+      - '+.workoscdn.com'
+      - '+.prodregistryv2.org'
       - '+.google.com'
       - '+.facebook.com'
       - '+.youtube.com'
