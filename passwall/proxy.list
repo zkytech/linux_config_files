@@ -42,6 +42,8 @@ DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
 DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN,www.googleapis.com
 DOMAIN,play.googleapis.com
+DOMAIN,accounts.google.com
+DOMAIN,oauth2.googleapis.com
 
 
 # Google drive
