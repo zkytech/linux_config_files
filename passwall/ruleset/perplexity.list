@@ -1,2 +1,2 @@
-DOMAIN-KEYWORD,perplexity
-DOMAIN-KEYWORD,google
+# Perplexity 单独分组只保留精确命中，避免把整类 Google 服务误送到该组。
+DOMAIN-SUFFIX,perplexity.ai

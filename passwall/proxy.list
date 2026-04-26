@@ -1,6 +1,58 @@
+
+# 内容：Google
+# 数量：31条
+DOMAIN-KEYWORD,gmail
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,1e100.net
+DOMAIN-SUFFIX,2mdn.net
+DOMAIN-SUFFIX,app-measurement.net
+DOMAIN-SUFFIX,c.gle
+DOMAIN-SUFFIX,g.co
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,goo.gl
+DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.cn
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,gvt0.com
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,gvt3.com
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,youtube-nocookie.com
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,yt.be
+DOMAIN-SUFFIX,ytimg.com
+IP-CIDR,74.125.0.0/16,no-resolve
+IP-CIDR,173.194.0.0/16,no-resolve
+
+DOMAIN-SUFFIX,fp-us-tmobile.rcs.telephony.goog
+
+# Antigravity
+DOMAIN-SUFFIX,antigravity-unleash.goog
+DOMAIN-SUFFIX,antigravity.google
+DOMAIN-KEYWORD,antigravity
+PROCESS-NAME,Antigravity Helper
+PROCESS-NAME,Antigravity Helper (Renderer)
+PROCESS-NAME,Antigravity Helper (GPU)
+PROCESS-NAME,Antigravity Helper (Plugin)
+DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN,www.googleapis.com
+DOMAIN,play.googleapis.com
+DOMAIN,accounts.google.com
+DOMAIN,oauth2.googleapis.com
+
+
+# Google drive
+PROCESS-NAME,Google Drive
+
 DOMAIN-SUFFIX,elevenlabs.io
-DOMAIN-SUFFIX,mcp.context7.com
+DOMAIN-SUFFIX,context7.com
 DOMAIN-SUFFIX,ghcr.io
+DOMAIN-SUFFIX,telegram.org
 DOMAIN-SUFFIX,jetbrains.com
 DOMAIN-SUFFIX,rust-lang.org
 DOMAIN-SUFFIX,nintendo.com
@@ -11,7 +63,7 @@ DOMAIN-SUFFIX,imdb.com
 DOMAIN-SUFFIX,scrapy.org
 DOMAIN-SUFFIX,dev.to
 DOMAIN-SUFFIX,geeksforgeeks.org
-DOMAIN-SUFFIX,jira.readthedocs.io
+DOMAIN-SUFFIX,readthedocs.io
 DOMAIN-SUFFIX,aaaa.gay
 DOMAIN,*.readthedocs.org
 DOMAIN-SUFFIX,bigmodel.cn
@@ -19,12 +71,11 @@ DOMAIN-SUFFIX,z.ai
 DOMAIN-SUFFIX,readthedocs.org
 DOMAIN-SUFFIX,podcasts.apple.com
 DOMAIN-SUFFIX,moon.fm
-DOMAIN-KEYWORD,windy
-DOMAIN,*.openvpn.net
-DOMAIN,*.googleapis.com
-DOMAIN,*.warp.dev
-DOMAIN,*.segment.io
-DOMAIN,*.sentry.io
+DOMAIN-SUFFIX,windy.com
+DOMAIN-SUFFIX,openvpn.net
+DOMAIN-SUFFIX,warp.dev
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
 DOMAIN-KEYWORD,openai
 DOMAIN-SUFFIX,maven.org
 DOMAIN-SUFFIX,mvnrepository.com
@@ -42,13 +93,18 @@ DOMAIN-SUFFIX,nodejs.org
 DOMAIN-SUFFIX,nebula-graph.io
 DOMAIN-SUFFIX,sstatic.net
 DOMAIN-SUFFIX,python.org
-DOMAIN-KEYWORD,apache
-DOMAIN-KEYWORD,jsdelivr
-DOMAIN-KEYWORD,stackoverflow.com
-DOMAIN-KEYWORD,github
-DOMAIN-KEYWORD,workflowy
-DOMAIN-KEYWORD,f-droid
-DOMAIN-KEYWORD,mongodb
+DOMAIN-SUFFIX,apache.org
+DOMAIN-SUFFIX,cdn.jsdelivr.net
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN-SUFFIX,stackoverflow.com
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,github.dev
+DOMAIN-SUFFIX,workflowy.com
+DOMAIN-SUFFIX,f-droid.org
+DOMAIN-SUFFIX,mongodb.com
 DOMAIN-SUFFIX,brew.sh
 DOMAIN-SUFFIX,sdkman.io
 DOMAIN-SUFFIX,xeton.dev
