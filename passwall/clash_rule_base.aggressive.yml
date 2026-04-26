@@ -2,6 +2,8 @@
 # 配置文件需要放置在 $HOME/.config/clash/config.yml
 # 或者运行目录下的config.yml
 #---------------------------------------------------#
+# 历史命名保留：这份当前实际使用 fake-ip，并关闭 IPv6，命中更激进。
+# 若遇到局域网、支付、办公软件等兼容性问题，优先回切到基线或 conservative 模板。
 # 混合端口 HTTP和SOCKS5用一个端口
 mixed-port: 7890
 
@@ -97,6 +99,26 @@ dns:
     'docs.qq.com': https://doh.pub/dns-query
     '+.qq.com': https://doh.pub/dns-query
     '+.tencent.com': https://doh.pub/dns-query
+    '+.chatgpt.com': https://cloudflare-dns.com/dns-query
+    '+.openai.com': https://cloudflare-dns.com/dns-query
+    '+.oaistatic.com': https://cloudflare-dns.com/dns-query
+    '+.oaiusercontent.com': https://cloudflare-dns.com/dns-query
+    '+.openaimerge.com': https://cloudflare-dns.com/dns-query
+    '+.statsig.com': https://cloudflare-dns.com/dns-query
+    '+.statsigapi.net': https://cloudflare-dns.com/dns-query
+    '+.featuregates.org': https://cloudflare-dns.com/dns-query
+    '+.featureassets.org': https://cloudflare-dns.com/dns-query
+    '+.workos.com': https://cloudflare-dns.com/dns-query
+    '+.workoscdn.com': https://cloudflare-dns.com/dns-query
+    '+.prodregistryv2.org': https://cloudflare-dns.com/dns-query
+    '+.github.com': https://cloudflare-dns.com/dns-query
+    '+.githubusercontent.com': https://cloudflare-dns.com/dns-query
+    '+.githubassets.com': https://cloudflare-dns.com/dns-query
+    '+.github.io': https://cloudflare-dns.com/dns-query
+    '+.githubapp.com': https://cloudflare-dns.com/dns-query
+    '+.githubcopilot.com': https://cloudflare-dns.com/dns-query
+    '+.fastly.net': https://cloudflare-dns.com/dns-query
+    '+.jsdelivr.net': https://cloudflare-dns.com/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -104,10 +126,29 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
     domain:
+      - '+.chatgpt.com'
+      - '+.openai.com'
+      - '+.oaistatic.com'
+      - '+.oaiusercontent.com'
+      - '+.openaimerge.com'
+      - '+.statsig.com'
+      - '+.statsigapi.net'
+      - '+.featuregates.org'
+      - '+.featureassets.org'
+      - '+.workos.com'
+      - '+.workoscdn.com'
+      - '+.prodregistryv2.org'
       - '+.google.com'
       - '+.facebook.com'
       - '+.youtube.com'
       - '+.github.com'
+      - '+.githubusercontent.com'
+      - '+.githubassets.com'
+      - '+.github.io'
+      - '+.githubapp.com'
+      - '+.githubcopilot.com'
+      - '+.fastly.net'
+      - '+.jsdelivr.net'
 cfw-latency-timeout: 3000
 cfw-latency-url: http://www.gstatic.com/generate_204
 
@@ -221,15 +262,16 @@ cfw-bypass-bak:
 # 系统代理跳过列表 起作用的
 cfw-bypass:
   # 直连列表
-  # 公司内网VPN域名（添加您公司的内网域名）
+  # 公司内网/VPN 域名（添加您自己的内网域名）
+  # 下方组织名通配符曾用于个人环境，误伤面偏大，公开模板默认不启用；如确有需要请改成精确域名。
   - "*.corp"
   - "*.internal"
   - "*.local"
   - "*.intranet"
   - "*.vpn"
-  - "*duckcoding*"
-  - "*komect*"
-  - "*cmhi*"
+  # - "*duckcoding*"
+  # - "*komect*"
+  # - "*cmhi*"
   - "10.*"
   - "172.16.*"
   - "172.17.*"
