@@ -25,6 +25,9 @@ allow-lan: true
 # #"[aaaa::a8aa:ff:fe09:57d8]": 绑定单个IPv6地址
 bind-address: "*"
 ipv6: true
+# mihomo: 对双栈域名并发尝试所有解析结果，减少 IPv6/IPv4 单一路径慢或抖动的影响。
+# 注意：这不是强制 IPv6；若需要代理节点本身优先连 IPv6，节点或 proxy-provider 还应设置 ip-version: ipv6-prefer。
+tcp-concurrent: true
 
 # 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
 # mode: rule
@@ -76,6 +79,14 @@ experimental:
 dns:
   enable: true # 启用DNS解析 - TUN模式必需
   ipv6: true # 支持IPv6
+  # 用 IP 作为 DoH/DoT 域名的 bootstrap 解析；IPv6 DNS 放前面，IPv4 作为回退。
+  default-nameserver:
+    - 2400:3200::1 # AliDNS IPv6
+    - 2402:4e00:: # DNSPod IPv6
+    - 2606:4700:4700::1111 # Cloudflare IPv6
+    - 2001:4860:4860::8888 # Google IPv6
+    - 223.5.5.5 # AliDNS IPv4 fallback
+    - 119.29.29.29 # DNSPod IPv4 fallback
   listen: 0.0.0.0:53
   enhanced-mode: redir-host # 使用redir-host模式，兼容性更好
   # fake-ip-range: 198.18.0.1/16 # 注释掉fake-ip相关配置
@@ -103,6 +114,7 @@ dns:
   nameserver:
     - 114.114.114.114
     - https://doh.pub/dns-query # 腾讯 DoH
+    - https://dns.alidns.com/dns-query # 阿里 DoH
   fallback:
     - https://cloudflare-dns.com/dns-query # Cloudflare DoH
     - https://dns.google/dns-query # Google DoH
@@ -137,6 +149,10 @@ dns:
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
+      - ::/128
+      - ::1/128
+      - fc00::/7
+      - fe80::/10
     domain:
       - '+.chatgpt.com'
       - '+.openai.com'
