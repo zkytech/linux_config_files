@@ -110,6 +110,25 @@ dns:
     '+.workos.com': https://cloudflare-dns.com/dns-query
     '+.workoscdn.com': https://cloudflare-dns.com/dns-query
     '+.prodregistryv2.org': https://cloudflare-dns.com/dns-query
+    '+.anthropic.com': https://cloudflare-dns.com/dns-query
+    '+.claude.ai': https://cloudflare-dns.com/dns-query
+    '+.claude.com': https://cloudflare-dns.com/dns-query
+    '+.claudeusercontent.com': https://cloudflare-dns.com/dns-query
+    '+.generativelanguage.googleapis.com': https://cloudflare-dns.com/dns-query
+    '+.gemini.google.com': https://cloudflare-dns.com/dns-query
+    '+.aistudio.google.com': https://cloudflare-dns.com/dns-query
+    '+.ai.google.dev': https://cloudflare-dns.com/dns-query
+    '+.ai.google': https://cloudflare-dns.com/dns-query
+    '+.makersuite.google.com': https://cloudflare-dns.com/dns-query
+    '+.alkalimakersuite-pa.clients6.google.com': https://cloudflare-dns.com/dns-query
+    '+.waa-pa.clients6.google.com': https://cloudflare-dns.com/dns-query
+    '+.people-pa.clients6.google.com': https://cloudflare-dns.com/dns-query
+    '+.proactivebackend-pa.googleapis.com': https://cloudflare-dns.com/dns-query
+    '+.apis.google.com': https://cloudflare-dns.com/dns-query
+    '+.clients6.google.com': https://cloudflare-dns.com/dns-query
+    '+.deepmind.com': https://cloudflare-dns.com/dns-query
+    '+.deepmind.google': https://cloudflare-dns.com/dns-query
+    '+.generativeai.google': https://cloudflare-dns.com/dns-query
     '+.github.com': https://cloudflare-dns.com/dns-query
     '+.githubusercontent.com': https://cloudflare-dns.com/dns-query
     '+.githubassets.com': https://cloudflare-dns.com/dns-query
@@ -137,6 +156,25 @@ dns:
       - '+.workos.com'
       - '+.workoscdn.com'
       - '+.prodregistryv2.org'
+      - '+.anthropic.com'
+      - '+.claude.ai'
+      - '+.claude.com'
+      - '+.claudeusercontent.com'
+      - '+.generativelanguage.googleapis.com'
+      - '+.gemini.google.com'
+      - '+.aistudio.google.com'
+      - '+.ai.google.dev'
+      - '+.ai.google'
+      - '+.makersuite.google.com'
+      - '+.alkalimakersuite-pa.clients6.google.com'
+      - '+.waa-pa.clients6.google.com'
+      - '+.people-pa.clients6.google.com'
+      - '+.proactivebackend-pa.googleapis.com'
+      - '+.apis.google.com'
+      - '+.clients6.google.com'
+      - '+.deepmind.com'
+      - '+.deepmind.google'
+      - '+.generativeai.google'
       - '+.google.com'
       - '+.facebook.com'
       - '+.youtube.com'
@@ -149,7 +187,8 @@ dns:
       - '+.fastly.net'
       - '+.jsdelivr.net'
 cfw-latency-timeout: 3000
-cfw-latency-url: http://www.gstatic.com/generate_204
+# AI 优先：CFW 通用延迟探测使用 ChatGPT 实站 HTTPS；这不再代表流媒体/游戏等非 AI 场景最优。
+cfw-latency-url: https://chatgpt.com/
 
 # 混合配置（mixin）
 # 支持向所有配置文件中注入公共属性设置
