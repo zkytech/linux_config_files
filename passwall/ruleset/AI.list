@@ -29,6 +29,13 @@ DOMAIN-SUFFIX,workos.com
 DOMAIN-SUFFIX,workoscdn.com
 DOMAIN-SUFFIX,openaimerge.com
 DOMAIN-SUFFIX,prodregistryv2.org
+DOMAIN,api.openai.com
+DOMAIN,ws.chatgpt.com
+DOMAIN-SUFFIX,auth.openai.com
+DOMAIN-SUFFIX,ct.sendgrid.net
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN,events.launchdarkly.com
+DOMAIN,clientstream.launchdarkly.com
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,a.nel.cloudflare.com
 DOMAIN-SUFFIX,challenges.cloudflare.com

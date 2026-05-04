@@ -134,6 +134,10 @@ dns:
     '+.featureassets.org': https://cloudflare-dns.com/dns-query
     '+.workos.com': https://cloudflare-dns.com/dns-query
     '+.workoscdn.com': https://cloudflare-dns.com/dns-query
+    '+.api.openai.com': https://cloudflare-dns.com/dns-query
+    '+.auth.openai.com': https://cloudflare-dns.com/dns-query
+    '+.ct.sendgrid.net': https://cloudflare-dns.com/dns-query
+    '+.launchdarkly.com': https://cloudflare-dns.com/dns-query
     '+.prodregistryv2.org': https://cloudflare-dns.com/dns-query
     '+.anthropic.com': https://cloudflare-dns.com/dns-query
     '+.claude.ai': https://cloudflare-dns.com/dns-query
@@ -184,6 +188,10 @@ dns:
       - '+.featureassets.org'
       - '+.workos.com'
       - '+.workoscdn.com'
+      - '+.api.openai.com'
+      - '+.auth.openai.com'
+      - '+.ct.sendgrid.net'
+      - '+.launchdarkly.com'
       - '+.prodregistryv2.org'
       - '+.anthropic.com'
       - '+.claude.ai'
@@ -254,7 +262,7 @@ dns:
 # Proxies module latency test settings
 cfw-latency-timeout: 3000
 # AI 优先：CFW 通用延迟探测使用 ChatGPT 实站 HTTPS；这不再代表流媒体/游戏等非 AI 场景最优。
-cfw-latency-url: https://chatgpt.com/
+cfw-latency-url: https://chatgpt.com/cdn-cgi/trace
 
 # 混合配置（mixin）
 # 支持向所有配置文件中注入公共属性设置
