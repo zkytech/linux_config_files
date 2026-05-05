@@ -1,0 +1,3 @@
+# Remote admin target CIDR template. Do not commit live host or network ranges here.
+# Keep real rules in a private local overlay, e.g.:
+# IP-CIDR,<remote-admin-cidr>,no-resolve
