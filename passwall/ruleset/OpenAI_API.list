@@ -1,5 +1,0 @@
-# OpenAI API 专用规则
-# 放在 ChatGPT Web / 通用 AI 规则之前，用于 API 级稳定优先策略。
-
-DOMAIN,api.openai.com
-DOMAIN-SUFFIX,api.openai.com
