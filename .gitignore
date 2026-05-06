@@ -4,3 +4,9 @@
 # IDE
 .idea/
 .vscode/
+# Sub-Store runtime secrets/state (server-only)
+/sub-store/.env
+/sub-store/data/*.json
+!/sub-store/data/sub-store.seed.redacted.json
+/sub-store/data/http-meta.log
+/sub-store/data/*.log
